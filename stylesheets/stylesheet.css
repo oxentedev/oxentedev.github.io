@@ -90,7 +90,7 @@ header h2 {
 }
 
 .inner {
-  width: 620px;
+  width: 1024px;
   margin: 0 auto;
 }
 
@@ -223,12 +223,14 @@ table {
 
 th {
   font-weight: 500;
+  background: #fbfbfb;
 }
 
 td {
   border: 1px solid #ebebeb;
-  text-align: center; 
+  text-align: left; 
   font-weight: 300;
+  padding: 10px;
 }
 
 form {
