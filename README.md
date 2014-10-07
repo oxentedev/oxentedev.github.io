@@ -43,7 +43,7 @@ sources/            // All sources used for development
     scripts/        // All application scripts
     stylus/         // All styles
     gruntfile.js    // All tasks
-    minasdev.js     // Server
+    oxentedev.js    // Server
     bower.json      // Bower configurations
 .gitignore
 README.md
