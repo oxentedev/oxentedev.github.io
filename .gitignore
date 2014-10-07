@@ -1,0 +1,11 @@
+.DS_Store
+.sass-cache/
+node_modules/
+*.log
+Thumbs.db
+__MACOSX
+.tmp/
+sources/libraries/
+public/data/
+production/
+dist/
