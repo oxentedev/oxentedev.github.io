@@ -1,0 +1,78 @@
+.proximos-eventos{
+    display none
+    background-color #fff
+    .container{
+        padding 30px 0 30px 60px
+    }
+    .proximos-eventos-title {
+        display inline-block
+        vertical-align middle
+        background-image url("/assets/images/svgs/proximos-eventos.svg")
+        background-position 0 0
+        background-repeat no-repeat
+        background-size 100% auto
+        width 338px
+        height 0
+        padding-top 194px
+        overflow hidden
+        margin-right 150px
+    }
+    .proximos-eventos-container {
+        display inline-block
+        vertical-align middle
+        width 580px
+    }
+    .proximos-eventos-item {
+        display inline-block
+        vertical-align top
+        width 210px
+        margin-top 25px
+        margin-bottom 25px
+        &.first{
+            margin-right 55px
+        }
+        &.last{
+            margin-left 55px
+        }
+    }
+    .proximo-evento-date {
+        font-family "PN-Black"
+        font-size 44px
+        text-transform uppercase
+        display block
+        color #242424
+        &:after{
+            display block
+            content ''
+            width 100px
+            height 5px
+            margin 12px 0 14px
+            background-color #e8422f
+        }
+    }
+    .proximo-evento-name {
+        font-family "PN-ExtraBold"
+        font-size 14px
+        text-transform uppercase
+        display block
+        color #242424
+        margin-bottom 12px
+    }
+    .proximo-evento-text {
+        font-family "PN-SemiBold"
+        font-size 12px
+        display block
+        color #444444
+        margin-bottom 4px
+        text-decoration none
+    }
+    .proximo-evento-link {
+        text-decoration none
+        font-family "PN-SemiBold"
+        color #e8422f
+        display block
+        font-size 12px
+        margin-top 6px
+        font-style italic
+    }
+}

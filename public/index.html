@@ -36,109 +36,182 @@
 
   <body>
 
-    <header id="header">
-      <div>
-        <h1 id="logo"><a href="/">Oxente Developers</a></h1>
+    <header class="header-page on-top" role="banner">
+      <div class="container">
+        <h1 class="logo"><a class="logo-link" href="/">Oxente Developers</a></h1>
 
-        <nav id="menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Como Participar</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Próximos Eventos</a></li>
-            <li><a href="#">Oxente Dev Beer</a></li>
-            <li><a href="#">Newsletter</a></li>
+        <nav class="navigation" role="navigation">
+          <ul class="navigation-container">
+            <li class="nav-item"><a class="nav-link" data-anchor="html" data-offset="0" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" data-anchor=".como-participar-section" data-offset="200" href="#">Como Participar</a></li>
+            <li class="nav-item"><a class="nav-link" data-anchor=".nossos-projetos" data-offset="-20" href="#">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" data-anchor=".proximos-eventos" data-offset="110" href="#">Próximos Eventos</a></li>
+            <li class="nav-item"><a class="nav-link" data-anchor=".minasdev-beer" data-offset="140" href="#">Oxente Dev Beer</a></li>
+            <li class="nav-item"><a class="nav-link" data-anchor=".newsletter" data-offset="200" href="#">Newsletter</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="main">
-      <div>
-        <section class="about">
-          <h2>Comunidade de Desenvolvedores do Rio Grande Do Norte</h1>
-          <p>Acreditamos que a troca de conhecimento é a base do crescimento profissional. Queremos unir desenvolvedores para que juntos todos possam contribuir e fortalecer o mercado nosso estado.</p>
-          <p>Tudo isso, através da criação de iniciativas que contribuam para essa troca e apoio de parceiros com a mesma visão.</p>
-        </section>
+    <main class="main-page" id="main" role="main">
+      <div class="container mapa-de-minas">
+        <div class="about">
+          <h1 class="about-title">Comunidade de Desenvolvedores do Rio Grande Do Norte</h1>
+          <p class="about-text">Acreditamos que a troca de conhecimento é a base do crescimento profissional. Queremos unir desenvolvedores para que juntos todos possam contribuir e fortalecer o mercado nosso estado.</p>
+          <p class="about-text">Tudo isso, através da criação de iniciativas que contribuam para essa troca e apoio de parceiros com a mesma visão.</p>
+        </div>
 
-        <ul>
-          <li><a href="https://www.facebook.com/oxentedev" target="_blank">Facebook</a></li>
-          <li><a href="https://twitter.com/oxentedev" target="_blank">Twitter</a></li>
-          <li><a href="https://github.com/oxentedev/oxentedev.github.io" target="_blank">Github</a></li>
-          <li><a href="http://www.meetup.com/Oxente-Developers/" target="_blank">Meetup</a></li>
-        </ul>
+        <ul class="minasdev-socials">
+          <li class="minasdev-social"><a class="sprite-icons minasdev-social-link facebook" href="https://www.facebook.com/oxentedev" target="_blank">Facebook</a></li>
+          <li class="minasdev-social"><a class="sprite-icons minasdev-social-link twitter" href="https://twitter.com/oxentedev" target="_blank">Twitter</a></li>
+          <li class="minasdev-social"><a class="sprite-icons minasdev-social-link github" href="https://github.com/oxentedev/oxentedev.github.io" target="_blank">Github</a></li>
+          <li class="minasdev-social"><a class="sprite-icons minasdev-social-link meetup" href="http://www.meetup.com/Oxente-Developers/" target="_blank">Meetup</a></li>
+      </ul>
+      </div>
+    </main>
+
+    <section class="como-participar-section">
+      <div class="container como-participar">
+        <div class="sprite-figures ribbon-como-participar">
+          <h1 class="como-participar-title">Como Participar?</h1>
+          <p class="como-participar-text" style="text-transform: uppercase;">
+            <strong class="como-participar-strong">Você é desenvolvedor e gostaria de apoiar essa ideia?</strong><br>
+            Seja colaborador em nossos projetos ou crie junto com nossos times um projeto e contribua com a comunidade do RN!
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="how-to-join">
-      <div>
-        <h2>Como Participar?</h1>
+    <section class="nossos-projetos">
+      <div class="container">
+        <h1 class="nossos-projetos-title">Nossos Projetos</h1>
 
-        <article>
-          <h3>Você é desenvolvedor e gostaria de apoiar essa ideia?</h3>
-          <p>Seja colaborador em nossos projetos ou crie junto com nossos times um projeto e contribua com a comunidade do RN!</p>
-        </article>
-      </div>
-    </section>
+        <div class="projetos">
+          <article class="projeto devincompany" itemscope itemtype="http://schema.org/Event">
+            <figure class="projeto-logo-container">
+              <img class="projeto-logo" src="/assets/images/projects/name.png" alt="name">
+            </figure>
 
-    <section id="ours-projects">
-      <div>
-        <h2>Nossos Projetos</h2>
+            <h2 class="projeto-title" lang="en" itemprop="name">name</h2>
+            <p class="projeto-desc" itemprop="description">
+              description
+            </p>
 
-        <ul>
-          <li>
+            <a href="#" class="site" lang="en" target="_blank">confira este projeto</a>
+
+            <h3 class="projeto-title">Idealizadores</h3>
             
+            <div class="idealizadores">
+              <ul class="idealizador-container"  itemscope itemtype="http://schema.org/Person">
+                <li class="idealizador-item sprite-icons link">
+                  <a href="#" target="_blank" class="idealizador nome" itemprop="name">Nome Sobrenome</a>
+                </li>
+              </ul>
+            </div>
+
+            <a href="#" class="projeto-button">Quer ajudar? Entre em contato</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="proximos-eventos">
+      <div class="container">
+        <h1 class="sprite-figures proximos-eventos-title">Próximos Eventos</h1>
+
+        <ul id="next-events" class="proximos-eventos-container">
+          <li class="proximos-eventos-item" itemscope itemtype="http://schema.org/Event">
+            <time itemprop="startDate" content="{{date}}" datetime="{{date}}" class="proximo-evento-date">{{moment(date).format("DD.MM")}}</time>
+            <h2 itemprop="name" class="proximo-evento-name" lang="en">{{name}}</h2>
+
+            <div itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
+              <a href="{{local.googlemaps_link}}" itemprop="streetAddress" target="_blank" class="proximo-evento-text">{{local.name}} &#10144;</a>
+            </div>
+
+            <p itemprop="description" class="proximo-evento-text">{{description}}</p>
+            <a itemprop="url" class="proximo-evento-link" href="{{url}}" target="_blank">Visite o site deste evento</a>
           </li>
         </ul>
       </div>
     </section>
 
-    <section id="next-events">
-      <div>
-        <h2>Próximos Eventos</h2>
+    <section class="minasdev-beer">
+      <div class="container">
+        <div id="minasdevbeer" class="informacoes" itemscope itemtype="http://schema.org/Event">
+          <h1 class="minasdev-beer-title">Que tal participar dos nossos encontros?</h1>
+          <p class="minasdev-beer-desc">Sabe aquela vontade de falar sobre código que<br> ninguém mais aguenta?  Vem matar ela com a gente!</p>
 
-        <ul>
-          <li>
-            
-          </li>
-        </ul>
+          <h2 class="minasdev-beer-subtitle minasdev-beer-no-date-container">Fique de olho na próxima data e participe!</h2>
+
+          <div class="minasdev-beer-date-container">
+            <h2 class="minasdev-beer-subtitle">Quando vai ser o próximo?</h2>
+            <time datetime="{{date}}" itemprop="startDate" content="{{moment(date).format('YYYY-MM-DD')}}" class="minasdev-beer-date">{{moment(date).format('DD.MM')}} às {{moment(date).format('HH[h]mm')}}</time>
+            <div itemprop="location" itemscope itemtype="http://schema.org/Restaurant">
+               <span class="local" itemprop="name">{{local.name}}</span>
+               <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <a href="{{local.googlemaps_link}}" target="_blank" class="minasdev-beer-address" itemprop="streetAddress">{{local.address}} &#10144;</a>
+                <span class="more-infos">Para mais informações:</span>
+                <a class="minasdev-beer-link" itemprop="url" href="{{local.site}}" target="_blank">Acesse a página deste local</a>
+               </div>
+            </div>
+          </div>
+
+        </div>
+        <h3 class="sprite-figures minasdev-beer-logo">MinasDev Beer</h3>
       </div>
     </section>
 
-    <section id="oxente-beer">
-      <div>
-        <h2>Que tal participar dos nossos encontros?</h2>
-        Sabe aquela vontade de falar sobre código que ninguém mais aguenta? Vem matar ela com a gente!
-
-        Fique de olho na próxima data e participe!
-      </div>
-    </section>
-
-    <section id="newsletter">
-      <div>
-        <h2>Newsletter</h2>
-        <form action="">
-          <input type="text" placeholder="Digite aqui seu email e receba novidades do Oxente Dev">
+    <section class="newsletter">
+      <div class="container">
+        <form class="newsletter-form" action="http://minasdev.us3.list-manage.com/subscribe/post?u=50258ba79635076ed976b3238&amp;id=c864b0ba02" method="post" target="_blank">
+          <label for="email" class="horz-middle-align newsletter-label">Newsletter</label>
+          <input id="email" type="text" class="horz-middle-align newsletter-input-text" name="EMAIL" aria-label="Digite aqui seu email e receba novidades do Minas Dev" placeholder="Digite aqui seu email e receba novidades do Minas Dev">
+          <button type="submit" name="subscribe" class="horz-middle-align newsletter-button">Cadastrar</button>
         </form>
       </div>
     </section>
 
-    <section id="support-partners">
-      <div>
-        <h2>Apoios e Parceiros</h2>
-
-        <ul>
-          <li><a href="javascript:;">Logo</a></li>
+    <section class="apoios-parceiros">
+      <div class="container">
+        <h2 class="apoios-parceiros-title">Apoios e Parceiros</h2>
+        <ul class="apoios-parceiros-container">
+          <li class="apoios-parceiros-item"><a href="http://frontinbh.com.br/" target="_blank" class="sprite-figures apoios-parceiros-link frontinbh">Front in BH</a></li>
+          <li class="apoios-parceiros-item"><a href="http://braziljs.org/" target="_blank" class="sprite-figures apoios-parceiros-link braziljs">BrazilJS Foundation</a></li>
+          <li class="apoios-parceiros-item"><a href="http://www.eventick.com.br/" target="_blank" class="sprite-figures apoios-parceiros-link eventick">Eventick</a></li>
+          <li class="apoios-parceiros-item"><a href="http://www.casadocodigo.com.br/" target="_blank" class="sprite-figures apoios-parceiros-link casa-do-codigo">Casa do Código</a></li>
+          <li class="apoios-parceiros-item"><a href="http://jchebly.com.br/" target="_blank" class="sprite-figures apoios-parceiros-link jchebly">JCHEBLY</a></li>
+          <li class="apoios-parceiros-item"><a href="http://2014.belohorizonte.wordcamp.org/" target="_blank" class="sprite-figures apoios-parceiros-link wordcamp">Wordcamp</a></li>
+          <li class="apoios-parceiros-item"><a href="http://rccomunicacao.com.br/" target="_blank" class="sprite-figures apoios-parceiros-link rccomunicacao">RC Comunicação</a></li>
+          <li class="apoios-parceiros-item"><a href="http://helabs.com.br/" target="_blank" class="sprite-figures apoios-parceiros-link helabs">HE:Labs</a></li>
         </ul>
       </div>
     </section>
 
-    <footer id="footer">
-      <div>
-        <section>
-          <h3>Quer ser nosso parceiro?</h3>
-          Precisamos da sua ajuda para transformar o mercado mineiro. Para saber mais informações entre em contato através do nosso email: <a href="mailto:oxentedev@gmail.com">oxentedev@gmail.com</a>
-        </section>
+    <footer class="footer-page" role="contentinfo">
+      <div class="container overflow-hidden">
+        <div class="pushto-left">
+          <h3 class="contact-title">
+            Quer ser nosso parceiro?
+          </h3>
+          <p class="contact-desc">Precisamos da sua ajuda para transformar o mercado potiguar. Para saber mais informações entre em contato através do nosso email: <a href="mailto:oxentedev@gmail.com" class="contact-link">oxentedev@gmail.com</a></p>
+        </div>
+
+        <div class="pushto-right">
+          <ul class="minasdev-socials">
+            <li class="minasdev-social"><a class="sprite-icons minasdev-social-link facebook" href="https://www.facebook.com/oxentedev" target="_blank">Facebook</a></li>
+            <li class="minasdev-social"><a class="sprite-icons minasdev-social-link twitter" href="https://twitter.com/oxentedev" target="_blank">Twitter</a></li>
+            <li class="minasdev-social"><a class="sprite-icons minasdev-social-link github" href="https://github.com/oxentedev/oxentedev.github.io" target="_blank">Github</a></li>
+            <li class="minasdev-social"><a class="sprite-icons minasdev-social-link meetup" href="http://www.meetup.com/Oxente-Developers/" target="_blank">Meetup</a></li>
+          </ul>
+
+          <p class="irc-channel">
+            Conecte-se no nosso
+            <br />
+            canal do IRC:
+            <a href="http://webchat.freenode.net/?channels=oxentedev" target="_blank">#oxentedev</a>
+          </p>
+          <p class="copyright">2014 Oxente Developers</p>
+        </div>
       </div>
     </footer>
 

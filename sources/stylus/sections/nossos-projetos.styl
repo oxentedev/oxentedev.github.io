@@ -1,0 +1,236 @@
+.nossos-projetos{
+    padding-top 200px
+    background-color #242424
+
+    .nossos-projetos-title {
+        font-family "PN-Black"
+        font-size 44px
+        text-transform uppercase
+        display block
+        color #e8422f
+        padding-left 55px
+
+        &:after {
+          display block
+          content ''
+          width 100px
+          height 5px
+          margin 25px 0 40px
+          background-color #e8422f
+        }
+    }
+}
+
+.projetos{
+    .projeto {
+        display inline-block
+        vertical-align top
+        width 265px
+        margin 0 55px
+        &.devincompany, &.devinuniversity{
+            .projeto-logo-container{
+                .projeto-logo{
+                    top 49px
+                    left 42px
+                }
+            }
+
+        }
+        &.acessibilidadeurbana{
+            .projeto-logo-container{
+                .projeto-logo{
+                    top 27px
+                    left 48px
+
+                }
+            }
+
+        }
+    }
+    .projeto-logo-container{
+        display block
+        background-color #f3f3f3
+        position relative
+        border-radius 3px
+        overflow hidden
+        width 262px
+        height 150px
+        margin-bottom 25px
+        .projeto-logo{
+            display block
+            position absolute
+        }
+    }
+    .projeto-title{
+        font-family "PN-ExtraBold"
+        text-transform uppercase
+        display block
+        color #fff
+        font-size 14px
+        &:after{
+            display block
+            content ''
+            width 50px
+            height 3px
+            margin 14px 0
+            background-color #e8422f
+        }
+    }
+    .projeto-desc{
+        font-family "PN-SemiBold"
+        display block
+        color #fff
+        font-size 12px
+        line-height 14px
+        &:after{
+            display block
+            content ''
+            width 50px
+            height 1px
+            margin 16px 0
+            background-color #343434
+        }
+
+    }
+    .site{
+        font-family "PN-SemiBold"
+        color #e8422f
+        font-style italic
+        font-size 12px
+        display block
+        margin-bottom 30px
+        text-decoration none
+    }
+    .idealizadores{
+        margin-bottom 25px
+        .idealizador-container{
+            display block
+        }
+        .idealizador-item{
+            display inline-block
+            vertical-align middle
+            width 45px
+            height 45px
+            overflow hidden
+            border-radius 100%
+            margin 2px
+            background-color #242424
+            -webkit-transition all 0.3s ease
+            -moz-transition all 0.3s ease
+            transition all 0.3s ease
+            &.link{
+                background-position ($min-link_offset_x + 12) ($min-link_offset_y + 30)
+            }
+            &.github{
+                background-position ($min-github_offset_x + 12) ($min-github_offset_y + 30)
+            }
+            &.facebook{
+                background-position ($min-facebook_offset_x + 12) ($min-facebook_offset_y + 30)
+            }
+            &.twitter{
+                background-position ($min-twitter_offset_x + 12) ($min-twitter_offset_y + 30)
+            }
+            &.google-plus{
+                background-position ($min-google-plus_offset_x + 12) ($min-google-plus_offset_y + 30)
+            }
+            &.linkedin{
+                background-position ($min-linkedin_offset_x + 12) ($min-linkedin_offset_y + 30)
+            }
+            &:hover{
+                background-color rgba(red, 0.2)
+                &.link{
+                    background-position ($min-link_offset_x + 12) ($min-link_offset_y + 13)
+                }
+                &.github{
+                    background-position ($min-github_offset_x + 12) ($min-github_offset_y + 13)
+                }
+                &.facebook{
+                    background-position ($min-facebook_offset_x + 12) ($min-facebook_offset_y + 13)
+                }
+                &.twitter{
+                    background-position ($min-twitter_offset_x + 12) ($min-twitter_offset_y + 13)
+                }
+                &.google-plus{
+                    background-position ($min-google-plus_offset_x + 12) ($min-google-plus_offset_y + 13)
+                }
+                &.linkedin{
+                    background-position ($min-linkedin_offset_x + 12) ($min-linkedin_offset_y + 13)
+                }
+                .idealizador{
+                    opacity 0.2
+                }
+            }
+        }
+        .idealizador{
+            width 45px
+            height 0
+            overflow hidden
+            border-radius 100%
+            padding-top 45px
+            background-size 100% auto
+            display block
+            background-repeat no-repeat
+            -webkit-transition opacity 0.3s ease
+            -moz-transition opacity 0.3s ease
+            transition opacity 0.3s ease
+            &.betomuniz{
+                background-image url("http://www.gravatar.com/avatar/fff7258836f20ea66b061b49a51fe8dd.jpg")
+            }
+            &.paulafaria{
+                background-image url("http://www.gravatar.com/avatar/ed70023e19882637aef103170e81f365.jpg")
+
+            }
+            &.lurimendes{
+                background-image url("http://www.gravatar.com/avatar/2dcd41a9d8fe766ca65b4221836e92ef.jpg")
+
+            }
+            &.erickbelfort{
+                background-image url("http://www.gravatar.com/avatar/68f46438b401267c2774f8c17376c472.jpg")
+
+            }
+            &.andrepereira{
+                background-image url("http://www.gravatar.com/avatar/8547a551037d556750d9f6aacd823f20.jpg")
+
+            }
+            &.brunopulis{
+                background-image url("http://www.gravatar.com/avatar/590371c05fc56adf612fd91ea509cf74.jpg")
+
+            }
+            &.marcoscesar{
+                background-image url("http://www.gravatar.com/avatar/540e08858874f19eb1545c2709e53e06.jpg")
+
+            }
+            &.rodolfodias{
+                background-image url("http://www.gravatar.com/avatar/c1c48dd95a4c0d614453baa488a94f78.jpg")
+
+            }
+        }
+    }
+    .projeto-button{
+        font-family "PN-Bold"
+        font-size 10px
+        border 1px solid #fff
+        background-color transparent
+        cursor pointer
+        padding 10px
+        text-transform uppercase
+        text-align center
+        display block
+        color #fff
+        border-radius 5px
+        width 100%
+        text-decoration none
+        margin-bottom 65px
+        -webkit-transition all 0.2s ease
+        -moz-transition all 0.2s ease
+        transition all 0.2s ease
+        &:hover{
+            color #e8422f
+            border 1px solid #e8422f
+            -webkit-transform rotate(-2deg) scale3d(1.05,1.05,1.05) translateZ(0)
+            -moz-transform rotate(-2deg) scale3d(1.05,1.05,1.05) translateZ(0)
+            transform rotate(-2deg) scale3d(1.05,1.05,1.05) translateZ(0)
+            backface-visibility hidden
+        }
+    }
+}

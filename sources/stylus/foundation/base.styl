@@ -1,0 +1,82 @@
+.container {
+  width 1140px
+  margin 0 auto
+}
+
+.sprite-figures {
+    background-image url("/assets/images/figures.png")
+    background-repeat no-repeat
+}
+
+.sprite-icons {
+    background-image url("/assets/images/icons.png")
+    background-repeat no-repeat
+}
+
+.minasdev-socials {
+    display block
+
+    .minasdev-social{
+        display inline-block
+        vertical-align middle
+        margin 0 25px
+    }
+
+    .minasdev-social-link {
+        display block
+        height 0
+        overflow hidden
+
+        &.facebook{
+            width $facebook_width
+            padding-top $facebook_height
+            background-position $facebook_offset_x $facebook_offset_y
+            -webkit-transition -webkit-transform 0.2s ease
+            -moz-transition -moz-transform 0.2s ease
+            transition transform 0.2s ease
+            &:hover{
+                -webkit-transform rotate(-5deg) scale3d(1.1,1.1,1.1) translateZ(0)
+                -moz-transform rotate(-5deg) scale3d(1.1,1.1,1.1) translateZ(0)
+                transform rotate(-5deg) scale3d(1.1,1.1,1.1) translateZ(0)
+                backface-visibility hidden
+            }
+            &:hover, &.active{
+                width $facebook_hover_width
+                padding-top $facebook_hover_height
+                background-position $facebook_hover_offset_x $facebook_hover_offset_y
+            }
+        }
+
+        &.twitter {
+            width $twitter_width
+            padding-top $twitter_height
+            background-position $twitter_offset_x $twitter_offset_y
+            -webkit-transition -webkit-transform 0.2s ease
+            -moz-transition -moz-transform 0.2s ease
+            transition transform 0.2s ease
+            &:hover{
+                -webkit-transform rotate(-5deg) scale3d(1.1,1.1,1.1) translateZ(0)
+                -moz-transform rotate(-5deg) scale3d(1.1,1.1,1.1) translateZ(0)
+                transform rotate(-5deg) scale3d(1.1,1.1,1.1) translateZ(0)
+                backface-visibility hidden
+            }
+            &:hover, &.active{
+                width $twitter_hover_width
+                padding-top $twitter_hover_height
+                background-position $twitter_hover_offset_x $twitter_hover_offset_y
+            }
+        }
+
+        &.google-plus {
+            width $google-plus_width
+            padding-top $google-plus_height
+            background-position $google-plus_offset_x $google-plus_offset_y
+            &:hover, &.active{
+                width $google-plus_hover_width
+                padding-top $google-plus_hover_height
+                background-position $google-plus_hover_offset_x $google-plus_hover_offset_y
+            }
+        }
+
+    }
+}

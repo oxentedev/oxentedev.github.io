@@ -1,0 +1,74 @@
+.como-participar-section{
+    position relative
+    margin-top -15px
+
+    .como-participar{
+        height 240px
+        min-height 240px
+        max-height 240px
+        background-image url("/assets/images/chanfrado-como-participar.png")
+        background-repeat no-repeat
+        background-position center 0
+        z-index 2
+        padding-top 60px
+
+        .ribbon-como-participar{
+            width $como-participar_width
+            height $como-participar_height
+            background-position $como-participar_offset_x $como-participar_offset_y
+            position relative
+            z-index 2
+            margin 0 auto
+            overflow hidden
+            padding-top 110px
+        }
+        .como-participar-title{
+            opacity 0
+            visibility hidden
+        }
+        .como-participar-text{
+            text-align center
+            display block
+            width 700px
+            margin 0 auto
+            font-family "PN-Bold"
+            font-size 16px
+            line-height 22px
+            -webkit-transform rotateZ(-6.5deg)
+            -moz-transform rotateZ(-6.5deg)
+            transform rotateZ(-6.5deg)
+        }
+
+        .como-participar-strong{
+            font-family "PN-ExtraBold"
+        }
+
+        &:before{
+            display block
+            content ''
+            background #ff4b37
+            width 48%
+            min-width 420px
+            height 100%
+            position absolute
+            left 0
+            top 0
+            z-index 1
+        }
+
+        &:after{
+            display block
+            content ''
+            background #ff4b37
+            width 48%
+            min-width 420px
+            height 100%
+            position absolute
+            right 0
+            top 0
+            z-index 1
+        }
+    }
+}
+
+

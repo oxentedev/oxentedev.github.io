@@ -1,0 +1,81 @@
+.header-page {
+    background-color #fff
+    position fixed
+    width 100%
+    z-index 4
+    border-bottom 3px solid #c84c3d
+    display none
+
+    .container{
+        position relative
+    }
+
+    .logo {
+        display block
+        position absolute
+        left 55px
+        top 0
+
+        .logo-link {
+            display block
+            overflow hidden
+            height 0
+            width 130px
+            padding-top 130px
+            background-image url("/assets/images/svgs/minasdev-logo.svg")
+            background-position 0 0
+            background-size 100% auto
+            background-repeat no-repeat
+            transition all 0.3s ease
+        }
+    }
+
+    .navigation {
+        .navigation-container {
+            display block
+            margin-left 220px
+            transition margin-left 0.3s ease
+        }
+
+        .nav-item {
+            display inline-block
+            vertical-align middle
+            margin 30px 20px
+            transition margin 0.3s ease
+        }
+
+        .nav-link {
+            display block
+            font-family "PN-Bold"
+            font-size 13px
+            text-transform uppercase
+            text-decoration none
+            color #1e1e1e
+            -webkit-transition color 0.3s ease
+            -moz-transition color 0.3s ease
+            transition color 0.3s ease
+            &:hover{
+                color lighten(#1e1e1e, 40%)
+            }
+        }
+    }
+
+    &.on-top{
+        .logo {
+            .logo-link {
+                width 170px
+                padding-top 170px
+            }
+        }
+
+        .navigation {
+            .navigation-container {
+                margin-left 270px
+            }
+
+            .nav-item {
+                margin 50px 20px
+            }
+        }
+    }
+}

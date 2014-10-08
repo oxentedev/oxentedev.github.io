@@ -1,0 +1,160 @@
+.newsletter{
+    background-color #e84230
+    .newsletter-form {
+        display block
+        padding 0
+        margin 0
+        padding 40px 0 40px 55px
+    }
+    .newsletter-label {
+        font-family "PN-Black"
+        font-size 35px
+        text-transform uppercase
+        color #fff
+        margin-right 70px
+    }
+    .newsletter-input-text {
+        font-family "PN-SemiBold"
+        font-size 14px
+        background-color transparent
+        border 1px solid #fff
+        border-radius 5px
+        padding 15px
+        width 550px
+        margin 0
+        color #fff
+        margin-right 15px
+        outline none
+        &::-webkit-input-placeholder {
+            font-family "PN-SemiBold"
+            color #fff
+            font-size 14px
+        }
+
+        &:-moz-placeholder {
+            font-family "PN-SemiBold"
+            color #fff
+            font-size 14px
+        }
+
+        &::-moz-placeholder {
+            font-family "PN-SemiBold"
+            color #fff
+            font-size 14px
+        }
+
+        &:-ms-input-placeholder {
+            font-family "PN-SemiBold"
+            color #fff
+            font-size 14px
+        }
+        &:focus{
+            &::-webkit-input-placeholder {
+                font-family "PN-SemiBold"
+                color #f1958b
+                font-size 14px
+            }
+
+            &:-moz-placeholder {
+                font-family "PN-SemiBold"
+                color #f1958b
+                font-size 14px
+            }
+
+            &::-moz-placeholder {
+                font-family "PN-SemiBold"
+                color #f1958b
+                font-size 14px
+            }
+
+            &:-ms-input-placeholder {
+                font-family "PN-SemiBold"
+                color #f1958b
+                font-size 14px
+            }
+        }
+        &.animate-error{
+            -webkit-animation: animateInptError 0.2s
+            -moz-animation: animateInptError 0.2s
+            animation: animateInptError 0.2s
+        }
+    }
+    .newsletter-button {
+        font-family "PN-Bold"
+        font-size 14px
+        border 1px solid #fff
+        color #e84230
+        text-transform uppercase
+        background-color #fff
+        padding 0
+        margin 0
+        outline none
+        cursor pointer
+        padding 15px 45px
+        border-radius 5px
+        -webkit-transition all 0.2s ease
+        -moz-transition all 0.2s ease
+        transition all 0.2s ease
+        -webkit-transform translateZ(0)
+        -moz-transform translateZ(0)
+        transform translateZ(0)
+        backface-visibility hidden
+        &:hover{
+            -webkit-transform rotate(-4deg) scale3d(1.05,1.05,1.05) translateZ(0)
+            -moz-transform rotate(-4deg) scale3d(1.05,1.05,1.05) translateZ(0)
+            transform rotate(-4deg) scale3d(1.05,1.05,1.05) translateZ(0)
+            backface-visibility hidden
+        }
+    }
+}
+@-webkit-keyframes animateInptError{
+    0% {
+        -webkit-transform translate3d(-5px,0,0)
+        -moz-transform translate3d(-5px,0,0)
+        transform translate3d(-5px,0,0)
+    }
+    50% {
+        -webkit-transform translate3d(5px,0,0)
+        -moz-transform translate3d(5px,0,0)
+        transform translate3d(5px,0,0)
+    }
+    100% {
+        -webkit-transform translate3d(0,0,0)
+        -moz-transform translate3d(0,0,0)
+        transform translate3d(0,0,0)
+    }
+}
+@-moz-keyframes animateInptError{
+    0% {
+        -webkit-transform translate3d(-5px,0,0)
+        -moz-transform translate3d(-5px,0,0)
+        transform translate3d(-5px,0,0)
+    }
+    50% {
+        -webkit-transform translate3d(5px,0,0)
+        -moz-transform translate3d(5px,0,0)
+        transform translate3d(5px,0,0)
+    }
+    100% {
+        -webkit-transform translate3d(0,0,0)
+        -moz-transform translate3d(0,0,0)
+        transform translate3d(0,0,0)
+    }
+}
+@keyframes animateInptError{
+    0% {
+        -webkit-transform translate3d(-5px,0,0)
+        -moz-transform translate3d(-5px,0,0)
+        transform translate3d(-5px,0,0)
+    }
+    50% {
+        -webkit-transform translate3d(5px,0,0)
+        -moz-transform translate3d(5px,0,0)
+        transform translate3d(5px,0,0)
+    }
+    100% {
+        -webkit-transform translate3d(0,0,0)
+        -moz-transform translate3d(0,0,0)
+        transform translate3d(0,0,0)
+    }
+}
